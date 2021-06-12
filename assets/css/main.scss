@@ -1,0 +1,85 @@
+.user-header{
+    width:100vw;
+    height:25vh;
+    background:grey;
+    background-image: url('https://images.unsplash.com/photo-1623413837100-41394617c1a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position-y: 50%;
+
+    .search input{
+        background-color: white;
+        opacity:0.5;
+
+        &:focus, &:hover{
+            opacity:1
+        }
+    }
+}
+
+.top-nav{
+    background:red;
+}
+
+.bottom-nav{
+    background-color: #eee;
+    a {
+        color:grey;
+        font-size: 2rem;
+        line-height: 1;
+        margin:0;
+
+        span{
+            font-size:1rem
+        }
+    }
+    .add-button a{
+        color:red;
+    }
+}
+
+.timeline{
+    background-color: rgba(245,240,236);
+    .post-content{
+
+        .content-media{
+            position:relative;
+            .media{
+                background-position: center;
+                background-size: cover;
+            }
+            header{
+                position:absolute;
+                top:0.5rem;
+                width:100%;
+                .avatar{
+                }
+                .seen{
+                    background-color:rgba(0,0,0,0.5);
+                    color:white;
+                }
+            }
+            
+        }
+    }
+    .post-meta{
+        >.meta{
+            margin-left: 15vw;
+            border-radius: 0.5rem;
+            position:relative;
+
+            .seen{
+                .list-inline-item {
+                    margin: 0 0.1rem 0.1rem 0;
+                }
+            }
+            .comments{
+                .meta{
+                    color:rgba(0,0,0,0.4)
+                }
+            }
+        }
+        .avatar{
+            border-right: 2px solid rgba(0,0,0,0.5)
+        }
+    }
+}
